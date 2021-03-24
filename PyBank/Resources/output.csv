@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 Index,Employee,Department
 1,Michael,Boss
 2,Dwight,Sales
 3,Meredith,Sales
 4,Kelly,HR
+=======
+Index,Employee,Department
+1,Michael,Boss
+2,Dwight,Sales
+3,Meredith,Sales
+4,Kelly,HR
+>>>>>>> ecd5c0cdedf32b42caa6282060c3e93451b881d0
