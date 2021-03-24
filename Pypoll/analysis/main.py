@@ -20,11 +20,12 @@ with open(csvpath, 'r') as csvfile:
     #loop through rows in csvreader and read each row to find total rows
     for row in data:
         total_vote += 1
+        # iterate through rows and find each distinct element in rows
         if row[2] in candidates:
           candidates[row[2]] += 1
         else:
           candidates[row[2]] = 1
-         
+#seperate compiled elements into a .keys list and .values list         
 candidate = list(candidates.keys())         
 votes_per = list(candidates.values())
 for i in range(len(candidate)):

@@ -25,5 +25,6 @@ with open(csvpath, 'r') as csvfile:
           candidates[row[2]] += 1
         else:
           candidates[row[2]] = 1
+          
 print(candidates)
 print(total_vote)
