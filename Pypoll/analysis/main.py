@@ -32,49 +32,24 @@ for i in range(len(candidate)):
 
 
 for i in range(len(votes_per)):
-    if votes_per[i] > votes_per[winner_i]
-    winner_i = i
+    if votes_per[i] > votes_per[winner_i]:
+        winner_i = i
     
-
-        
-print(winner)
-# calc the percentage of votes per cand
-# declare a winner
-print(vote_percentage)
-print(candidate)
-print(votes_per)
  
 #calc percentage for each candidate
 
 #declare winner based on max vote
 
-'''    * The total number of votes cast
 
-  * A complete list of candidates who received votes
-
-  * The percentage of votes each candidate won
-
-  * The total number of votes each candidate won
-
-  * The winner of the election based on popular vote.
-
-* As an example, your analysis should look similar to the one below:
-
-  ```text
-  Election Results
-  -------------------------
-  Total Votes: 3521001
-  -------------------------
-  Khan: 63.000% (2218231)
-  Correy: 20.000% (704200)
-  Li: 14.000% (492940)
-  O'Tooley: 3.000% (105630)
-  -------------------------
-  Winner: Khan
-  -------------------------'''
 print("---Election Results---")
 print("----------------------")
 print(f"-Total Votes: {total_vote}-")
-print(candidates)
+print("----------------------")
+for i in range(len(candidate)):
+    print(f"{candidate[i]}: {round(vote_percentage[i], 3)}% ({votes_per[i]})")
+
+print("----------------------")
+print(f"Winner: {candidate[winner_i]}")
+print("----------------------")
 
 #https://www.geeksforgeeks.org/counting-the-frequencies-in-a-list-using-dictionary-in-python/
