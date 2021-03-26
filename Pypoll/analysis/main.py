@@ -53,4 +53,15 @@ print("----------------------")
 print(f"Winner: {candidate[winner_i]}")
 print("----------------------")
 
-#https://www.geeksforgeeks.org/counting-the-frequencies-in-a-list-using-dictionary-in-python/
+output_path = os.path.join('C:\Users\tbrid\Desktop\python-challenge\Pypoll\Resources\election_data.csv')
+with open(output_path, 'w') as txtfile:
+    print("---Election Results---")
+    print("----------------------")
+    print(f"-Total Votes: {total_vote}-")
+    print("----------------------")
+    for i in range(len(candidate)):
+        print(f"{candidate[i]}: {round(vote_percentage[i], 3)}% ({votes_per[i]})")
+
+    print("----------------------")
+    print(f"Winner: {candidate[winner_i]}")
+    print("----------------------")
