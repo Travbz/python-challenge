@@ -53,7 +53,7 @@ print("----------------------")
 print(f"Winner: {candidate[winner_i]}")
 print("----------------------")
 
-output_path = os.path.join('C:\Users\tbrid\Desktop\python-challenge\Pypoll\Resources\election_data.csv')
+output_path = os.path.join('C:/Users/tbrid/Desktop/python-challenge/Pypoll/Resources/election_data.csv')
 with open(output_path, 'w') as txtfile:
     print("---Election Results---")
     print("----------------------")
