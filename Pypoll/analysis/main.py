@@ -10,13 +10,11 @@ candidate = ''
 votes_per = []
 winner = ''
 winner_i = 0
+#Sami Coalson was majorly helpful, he deserves credit for helping me write my for loops and showing me the genius print() nested in a for loop.
+
 with open(csvpath, 'r') as csvfile:
     data = csv.reader(csvfile, delimiter=',')
-    print(data)
-
-     # Read the header row first (skip this step if there is now header)
     csv_header = next(data)
-    
     #loop through rows in csvreader and read each row to find total rows
     for row in data:
         total_vote += 1
@@ -30,18 +28,12 @@ candidate = list(candidates.keys())
 votes_per = list(candidates.values())
 for i in range(len(candidate)):
     vote_percentage.append((votes_per[i] / total_vote) * 100)
-
-
 for i in range(len(votes_per)):
     if votes_per[i] > votes_per[winner_i]:
         winner_i = i
-    
- 
-#calc percentage for each candidate
-
-#declare winner based on max vote
 
 
+        
 print("---Election Results---")
 print("----------------------")
 print(f"-Total Votes: {total_vote}-")
